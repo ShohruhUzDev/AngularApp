@@ -1,1 +1,11 @@
-<p>lessons works!</p>
+<h1>{{getTitle()}}</h1>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let lesson of lessons" (click)="onSelect(lesson)" >
+      {{lesson.title}}
+  </li>
+</ul>
+<app-lesson [lesson]="selectedLesson">
+
+
+</app-lesson>
