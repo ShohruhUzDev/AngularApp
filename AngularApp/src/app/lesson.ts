@@ -1,4 +1,4 @@
-export class LessonsComponent{
+export class Lesson{
   id:number|undefined;
   title:string |undefined;
   price:number|undefined;
